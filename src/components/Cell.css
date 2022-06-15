@@ -1,0 +1,74 @@
+.Cell{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: rgb(138, 138, 138);
+    box-shadow: 0px 0px 5px 0px purple;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.n0{
+    background: #000;
+}
+
+.Cell:hover{
+    background: rgb(193, 193, 193);
+}
+
+.Cell:active{
+    background: rgb(180, 180, 180);
+}
+
+.cross{
+    position: absolute;
+    transform: rotate(45deg);
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: 0.3s;
+    
+}
+
+.cross::before{
+    border-radius: 10px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    display: block;
+    content: '';
+    background: rgb(255, 213, 213);
+    box-shadow: 0px 0px 10px 0px red;
+    height: 60px;
+    width: 10px;
+}
+
+.cross::after{
+    box-shadow: 0px 0px 10px 0px red;
+    border-radius: 10px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    display: block;
+    content: '';
+    background: rgb(255, 213, 213);
+    height: 10px;
+    width: 60px;
+}
+
+.circle{
+    top: 41%;
+    left:42%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 10px solid  rgb(199, 196, 255);
+    box-shadow: 0px 0px 12px 0px blue;
+    border-radius: 100px;
+    margin: 10px;
+    transition: 0.3s;
+}
